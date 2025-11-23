@@ -6,18 +6,23 @@ export const HeroSection = () => {
     <section id = "hero" className="relative min-h-screen flex flex-col items-center justify-center px-4">
         <div className="container max-w-4xl mx-auto text-center z-10">
             <div className="space-y-6">
+                <div className="mx-auto w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden opacity-0 animate-fade-in">
+                    <img 
+                        src="/Headshot.JPG" 
+                        alt="Burhanuddin Qadir" 
+                        className="w-full h-full object-cover"
+                    />
+                </div>
                 <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
                     <span className="opacity-0 animate-fade-in"> Hi, I'm</span>
                     <span className="text-primary opacity-0 animate-fade-in-delay-1"> Burhanuddin</span>
                     <span className="text-gradient ml-2 opacity-0 animate-fade-in-delay-2"> Qadir</span>
                 </h1>
                 <p className="text-lg md:text-xl text-muted-foreground max-2-2xl mx-auto opacity-0 animate-fade-in-delay-3">
-                    I create amazing websites and experiences with modern technologies.
-                    Specalizing in front-end development, I build interfaces that are
-                    both beautiful and functional.
+                    I have a double degree in Computer Engineering & Mangement from McMaster University
                 </p>
                 <div className="pt-4 opacity-0 animate-fade-in-delay-4">
-                    <a href="#projects" className="cosmic-button">
+                    <a href="#experience" className="cosmic-button">
                         View My Work
                     </a>
                 </div>
