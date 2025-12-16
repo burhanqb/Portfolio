@@ -15,8 +15,8 @@ export const ContactSection = () => {
     message: "Hello, I'd like to talk about...",
   };
 
-  const typingSpeed = 100; // ms per character
-  const pauseTime = 1000; // pause at the end before deleting
+  const typingSpeed = 100;
+  const pauseTime = 1000;
 
   const loopTyping = (text, setText) => {
     let index = 0;
@@ -70,9 +70,9 @@ export const ContactSection = () => {
     <section id="contact" className="py-24 px-4 relative bg-secondary/30">
       <div className="container mx-auto max-w-5xl">
         <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
-          Get In <span className="text-primary">Touch</span>
+          Get In <span className="text-primary relative overflow-hidden inline-block streak-text">Touch</span>
         </h2>
-        <p className="text-center text-muted-foreground mb-12 max-w-1xl mx-auto">
+        <p className="text-center text-muted-foreground mb-4 max-w-1xl mx-auto">
           Feel free to reach out, I'm always open to discussing new opportunities and making new connections.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-[auto_1fr] gap-12">

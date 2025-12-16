@@ -8,6 +8,7 @@ const navItems = [
   { name: "Experience", href: "experience" },
   { name: "Skills", href: "skills" },
   { name: "Projects", href: "projects" },
+  { name: "Extracurriculars", href: "extracurriculars" },
   { name: "Contact", href: "contact" },
 ];
 
@@ -16,7 +17,6 @@ export const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isDarkMode, setIsDarkMode] = useState(false);
 
-  // Scroll effect
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 10);
@@ -25,7 +25,6 @@ export const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Theme effect
   useEffect(() => {
     const storedTheme = localStorage.getItem("theme");
     if (storedTheme === "dark") {
@@ -59,7 +58,6 @@ export const Navbar = () => {
       )}
     >
       <div className="container flex items-center justify-between">
-        {/* Logo */}
         <a className="text-xl font-bold text-primary flex items-center" href="#hero">
           <span className="relative z-10">
             <span className="text-glow text-foreground">
@@ -68,8 +66,6 @@ export const Navbar = () => {
             Portfolio
           </span>
         </a>
-
-        {/* Desktop navbar view */}
         <div className="hidden md:flex items-center space-x-4">
           {navItems.map((item, key) => (
             <a
@@ -80,8 +76,6 @@ export const Navbar = () => {
               {item.name}
             </a>
           ))}
-
-          {/* Theme toggle button */}
           <button
             onClick={toggleTheme}
             className={cn(
@@ -96,8 +90,6 @@ export const Navbar = () => {
             )}
           </button>
         </div>
-
-        {/* Mobile menu toggle */}
         <button
           onClick={() => setIsMenuOpen((prev) => !prev)}
           className="md:hidden p-2 text-foreground z-50"
@@ -105,8 +97,6 @@ export const Navbar = () => {
         >
           {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
-
-        {/* Mobile menu overlay */}
         <div
           className={cn(
             "fixed inset-0 bg-background/95 backdrop-blur-md z-40 flex flex-col items-center justify-center transition-all duration-300 md:hidden",
@@ -125,8 +115,6 @@ export const Navbar = () => {
                 {item.name}
               </a>
             ))}
-
-            {/* Theme toggle in mobile menu */}
             <button
               onClick={toggleTheme}
               className="p-2 rounded-full transition-colors duration-300 focus:outline-none hover:bg-foreground/10"

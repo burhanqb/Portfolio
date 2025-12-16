@@ -13,11 +13,14 @@ export const HeroSection = () => {
                         className="w-full h-full object-cover"
                     />
                 </div>
-                <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
-                    <span className="opacity-0 animate-fade-in"> Hi, I'm</span>
-                    <span className="text-primary opacity-0 animate-fade-in-delay-1"> Burhanuddin</span>
-                    <span className="text-gradient ml-2 opacity-0 animate-fade-in-delay-2"> Qadir</span>
+                <h1 className="text-4xl md:text-6xl font-bold tracking-tight flex justify-center items-center space-x-2">
+                    <span className="opacity-0 animate-fade-in">Hi, I'm</span>
+                    <span className="text-primary relative overflow-hidden streak-text opacity-0 animate-fade-in-delay-1">
+                        Burhanuddin
+                    </span>
+                    <span className="text-gradient opacity-0 animate-fade-in-delay-2">Qadir</span>
                 </h1>
+
                 <p className="text-lg md:text-xl text-muted-foreground max-2-2xl mx-auto opacity-0 animate-fade-in-delay-3">
                     I have a double degree in Computer Engineering & Mangement from McMaster University
                 </p>
