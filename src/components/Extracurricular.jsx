@@ -14,7 +14,7 @@ const extracurriculars = [
         id: 2,
         title: "Jeux de Commerce Central",
         description: "Interactive analytics with data visulization and filtering capabilities.",
-        image: "JDCC.png",
+        image: "JDCC.jpg",
         //tags: ["TypeScript, D3.js, Next.js"],
         demoUrl: "#",
         githubURL: "#",
