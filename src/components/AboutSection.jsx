@@ -72,10 +72,10 @@ export const AboutSection = () => {
               <div className="flex gap-4 h-20 items-center">
                 <div className="w-14 h-14 rounded-full border-2 border-primary overflow-hidden flex items-center justify-center bg-primary/10">
                   <img
-                    src="../smokey.png"
+                    src="../smokey.jpg"
                     alt="Cat"
                     className="w-full h-full object-cover block cursor-pointer"
-                    onClick={() => openModal("/smokey.png")}
+                    onClick={() => openModal("/smokey.jpg")}
                   />
                 </div>
                 <div className="text-left">
