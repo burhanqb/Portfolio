@@ -4,7 +4,7 @@ const extracurriculars = [
     {
         id: 1,
         title: "Google Developer Club",
-        description: "A beutiful landing page app using React and Tailwind.",
+        description: "Developed online GDSC merchandise store and maintained GDSC website",
         image: "GDSC.jpg",
         //ags: ["React, TailwindCSS, Supabase"],
         demoUrl: "#",
@@ -13,7 +13,7 @@ const extracurriculars = [
     {
         id: 2,
         title: "Jeux de Commerce Central",
-        description: "Interactive analytics with data visulization and filtering capabilities.",
+        description: "Responsible for the technology used for the business competition. ",
         image: "JDCC.jpg",
         //tags: ["TypeScript, D3.js, Next.js"],
         demoUrl: "#",
@@ -22,7 +22,7 @@ const extracurriculars = [
     {
         id: 3,
         title: "Sumo-bot",
-        description: "Full-featured e-commerce platform with user authentication and payment processing.",
+        description: "Design, build, and program small, autonomous robots that fight robots",
         image: "SumoBot.png",
         //tags: ["React, Node.js, Stripe"],
         demoUrl: "#",
@@ -54,14 +54,14 @@ export const Extracurriculars = () => {
                             <h3 className="text-xl font-semibold mb-4"> {extracurriculars.title}</h3>
                             <p className="text-muted-foreground text-sm mb-4">{extracurriculars.description}</p>
                             <div className="flex justify-end items-center"> 
-                                <div className="flex space-x-3">
+                                {/* <div className="flex space-x-3">
                                     <a href={extracurriculars.demoUrl} target="_blank" className="text-foreground/80 hover:text-primary transition-colors duration-300"> 
                                         <ExternalLink size={20}/>
                                     </a>
                                     <a href={extracurriculars.githubUrl} target="_blank" className="text-foreground/80 hover:text-primary transition-colors duration-300">
                                         <Github size={20}/>
                                     </a>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                     </div>

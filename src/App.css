@@ -133,9 +133,9 @@
 
 .streak-text {
   position: relative;
-  display: inline-flex;      /* use flex for perfect centering */
-  align-items: center;       /* vertical center */
-  justify-content: center;   /* horizontal center */
+  display: inline-flex;     
+  align-items: center;       
+  justify-content: center;  
   overflow: hidden;
 }
 

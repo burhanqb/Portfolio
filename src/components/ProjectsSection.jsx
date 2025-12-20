@@ -3,28 +3,28 @@ import { ArrowRight, ExternalLink, Github } from "lucide-react";
 const projects = [
     {
         id: 1,
-        title: "Saas Landing Page",
-        description: "A beutiful landing page app using React and Tailwind.",
-        image: "projects/project1.png",
-        tags: ["React, TailwindCSS, Supabase"],
+        title: "Pacemaker",
+        description: "Pacemaker simulation model using Tkinter, MATLAB and Simulink",
+        image: "projects/Pacemaker.jpg",
+        tags: ["Python, Tkinter, MATLAB, Simulink"],
         demoUrl: "#",
         githubURL: "#",
     },
     {
         id: 2,
-        title: "Orbit Analytics Dashboard",
-        description: "Interactive analytics with data visulization and filtering capabilities.",
-        image: "projects/project2.png",
-        tags: ["TypeScript, D3.js, Next.js"],
+        title: "Lidar 3D Mapper",
+        description: "Real-time 3D spatial mapping system using Python and the Open3D API",
+        image: "projects/Lidar.jpeg",
+        tags: ["Python, Open3D, MSP432E401Y"],
         demoUrl: "#",
         githubURL: "#",
     },
     {
         id: 3,
-        title: "E-commerce Platform",
-        description: "Full-featured e-commerce platform with user authentication and payment processing.",
-        image: "projects/project3.png",
-        tags: ["React, Node.js, Stripe"],
+        title: "Image Compressor",
+        description: "image decompression system using Verilog on an Altera DE2-115 FPGA",
+        image: "projects/ImageCompressor.jpg",
+        tags: ["Verilog, Waveforms"],
         demoUrl: "#",
         githubURL: "#",
     },
@@ -37,7 +37,8 @@ export const ProjectsSection = () => {
                 Featured <span className="text-primary relative overflow-hidden inline-block streak-text">Projects</span>
             </h2>
             <p className="text-center text-muted-foreground mb-4 max-w-2xl mx-auto">
-                Here are some of my recent projects. Each project was carefully crafted with attention to detail, performance, and user experience.
+                {/*Here are some of my recent projects. Each project was carefully crafted with attention to detail, performance, and user experience.*/}
+                Here are some of my recent projects, each carefully crafted with attention to detail.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {projects.map((project, key) => (
@@ -54,14 +55,14 @@ export const ProjectsSection = () => {
                             <h3 className="text-xl font-semibold mb-4"> {project.title}</h3>
                             <p className="text-muted-foreground text-sm mb-4">{project.description}</p>
                             <div className="flex justify-end items-center"> 
-                                <div className="flex space-x-3">
+                                {/* <div className="flex space-x-3">
                                     <a href={project.demoUrl} target="_blank" className="text-foreground/80 hover:text-primary transition-colors duration-300"> 
                                         <ExternalLink size={20}/>
                                     </a>
                                     <a href={project.githubUrl} target="_blank" className="text-foreground/80 hover:text-primary transition-colors duration-300">
                                         <Github size={20}/>
                                     </a>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                     </div>
